@@ -1,6 +1,10 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(mamifero1, mamifero2) {
+  if (manifero1 === true && manifero2 === true) {
+    return true
+  } else {
+    return false
+  }
 }
 
 // Desafio 2
