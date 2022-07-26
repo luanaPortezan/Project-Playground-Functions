@@ -2,24 +2,16 @@
 
 function compareTrue(mammal1, mammal2) {
   if (mammal1 === true && mammal2 === true) {
-    return true
-  } else {
-    return false
+    return true;
   }
+  return false;
 }
-//console.log(compareTrue(horse, cat)); //true
-//console.log(compareTrue(horse, unicornio)) //false
-
 
 // Desafio 2-------------------------------------
-
 function calcArea(base, height) {
   let triangle = (base * height) / 2;
   return triangle;
 }
-// console.log(calcArea (10, 50));
-// console.log(calcArea (5, 2));
-// console.log(calcArea (51, 1));
 
 // Desafio 3-------------------------------------
 function splitSentence(phrases) {
@@ -28,12 +20,14 @@ function splitSentence(phrases) {
   return word;
 }
 
-//console.log(splitSentence('go trybe"'));
-
 // Desafio 4-------------------------------------
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let firstWord = array[0];
+  let lastword = array[array.length - 1];
+
+  return lastword + ", " + firstWord;
 }
+//console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5-------------------------------------
 function footballPoints() {
