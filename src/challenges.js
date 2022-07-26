@@ -1,11 +1,17 @@
 // Desafio 1
-function compareTrue(mamifero1, mamifero2) {
-  if (manifero1 === true && manifero2 === true) {
+const horse = true;
+const cat = true;
+const unicornio = false;
+
+function compareTrue(mammal1, mammal2) {
+  if (mammal1 === true && mammal2 === true) {
     return true
   } else {
     return false
   }
 }
+console.log(compareTrue(horse, cat)); //true
+console.log(compareTrue(horse, unicornio)) //false
 
 // Desafio 2
 function calcArea() {
