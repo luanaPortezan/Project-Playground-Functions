@@ -1,7 +1,7 @@
 // Desafio 1
-const horse = true;
-const cat = true;
-const unicornio = false;
+//const horse = true;
+//const cat = true;
+//const unicornio = false;
 
 function compareTrue(mammal1, mammal2) {
   if (mammal1 === true && mammal2 === true) {
@@ -10,13 +10,19 @@ function compareTrue(mammal1, mammal2) {
     return false
   }
 }
-console.log(compareTrue(horse, cat)); //true
-console.log(compareTrue(horse, unicornio)) //false
+//console.log(compareTrue(horse, cat)); //true
+//console.log(compareTrue(horse, unicornio)) //false
+
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+
+function calcArea(base, height) {
+  let triangle = (base * height) /2;
+  return triangle;
 }
+// console.log(calcArea (10, 50));
+// console.log(calcArea (5, 2));
+// console.log(calcArea (51, 1));
 
 // Desafio 3
 function splitSentence() {
