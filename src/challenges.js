@@ -1,5 +1,5 @@
 // Desafio 1-------------------------------------
-
+// tabela da verdade
 function compareTrue(mammal1, mammal2) {
   if (mammal1 === true && mammal2 === true) {
     return true;
@@ -35,8 +35,24 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6-------------------------------------
-function highestCount() {
-  // seu código aqui
+// primeiro passo descobrir o maior número.
+// segundo passo saber a frequência que ele aparece.
+function highestCount(array) {
+  let frequency = 0;
+  let highestNumber = [0];
+
+  for (let index = 0; index < array.length; index += 1) {
+    if (highestNumber < array[index]) {
+      highestNumber = array[index];
+    }
+  }
+
+  for (let i = 0; i < array.length; i += 1) {
+    if (highestNumber === array[i]) {
+      frequency += 1;
+    }
+  }
+  return frequency;
 }
 
 // Desafio 7-------------------------------------
