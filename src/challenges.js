@@ -36,7 +36,6 @@ function footballPoints(wins, ties) {
 
 // Desafio 6-------------------------------------
 // primeiro passo descobrir o maior número.
-// segundo passo saber a frequência que ele aparece.
 function highestCount(array) {
   let highestNumber = array[0];
   for (let index = 0; index < array.length; index += 1) {
@@ -44,6 +43,7 @@ function highestCount(array) {
       highestNumber = array[index];
     }
   }
+  // segundo passo saber a frequência que ele aparece.
   let frequency = 0;
   for (let i = 0; i < array.length; i += 1) {
     if (array[i] === highestNumber) {
@@ -54,8 +54,16 @@ function highestCount(array) {
 }
 
 // Desafio 7-------------------------------------
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let cat = "";
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
+    cat = "cat1";
+  } else if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
+    cat = "cat2";
+  } else {
+    cat = "os gatos trombam e o rato foge";
+  }
+  return cat;
 }
 
 // Desafio 8-------------------------------------
