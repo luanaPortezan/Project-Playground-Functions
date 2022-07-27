@@ -38,17 +38,15 @@ function footballPoints(wins, ties) {
 // primeiro passo descobrir o maior número.
 // segundo passo saber a frequência que ele aparece.
 function highestCount(array) {
-  let frequency = 0;
-  let highestNumber = [0];
-
+  let highestNumber = array[0];
   for (let index = 0; index < array.length; index += 1) {
-    if (highestNumber < array[index]) {
+    if (array[index] > highestNumber) {
       highestNumber = array[index];
     }
   }
-
+  let frequency = 0;
   for (let i = 0; i < array.length; i += 1) {
-    if (highestNumber === array[i]) {
+    if (array[i] === highestNumber) {
       frequency += 1;
     }
   }
