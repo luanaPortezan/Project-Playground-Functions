@@ -56,29 +56,29 @@ function highestCount(array) {
 // Desafio 7-------------------------------------
 function catAndMouse(mouse, cat1, cat2) {
   if (cat1 === cat2 || cat2 - mouse === cat1 || cat1 - mouse === cat2 || cat1 + mouse === cat2 - mouse) {
-    return "os gatos trombam e o rato foge";
+    return "os gatos trombam e o rato foge"; // todas possibilidades dos gatos trombarem
   } else if (cat1 + mouse < cat2 + mouse) {
-    return "cat1";
-  } else {
-    return "cat2";
+    return "cat1"; // gato1 pega o rato
   }
+    return "cat2"; // gato2 pega o rato
 }
 
 // Desafio 8-------------------------------------
 function fizzBuzz(array) {
   let numbersArray = [];
-  for(let index = 0; index < array.length; index += 1) {
-  if(array[index] % 3 === 0 && array[index] % 5 === 0) {
-    numbersArray.push('fizzBuzz');
-  }else if (array[index] % 5 === 0) {
-    numbersArray.push('buzz');
-  }else if (array[index] % 3 === 0) {
-    numbersArray.push('fizz');
-  }else if (array[index] % 3 !== 0 || array % 5 !== 0) {
-    numbersArray.push('bug!');
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] % 3 === 0 && array[index] % 5 === 0) {
+      numbersArray.push('fizzBuzz');
+    } else if (array[index] % 5 === 0) {
+      numbersArray.push('buzz');
+    } else if (array[index] % 3 === 0) {
+      numbersArray.push('fizz');
+    } else if (array[index] % 3 !== 0 || array % 5 !== 0) {
+      numbersArray.push('bug!');
+    }
   }
-}return numbersArray;
-} 
+  return numbersArray;
+}
 
 // Desafio 9-------------------------------------
 function encode() {
