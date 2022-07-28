@@ -4,9 +4,18 @@ function generatePhoneNumber() {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
-}
+// Pesquisa realizada em https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+function triangleCheck(lineA, lineB, lineC) {
+  if (lineA < lineB + lineC 
+    && lineB < lineA + lineB 
+    && lineC < lineA + lineC 
+    && lineA > Math.abs(lineB - lineC) 
+    && lineB > Math.abs(lineA - lineB) 
+    && lineC > Math.abs(lineA - lineC)) {
+    return true;
+  }
+    return false;
+  }
 
 // Desafio 13
 function hydrate() {
